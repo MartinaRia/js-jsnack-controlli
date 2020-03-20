@@ -4,7 +4,7 @@
 
 /* 1 - L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore.*/
 
-var result, other
+var result
 
 var numUno = parseInt(prompt("Prego inserire un numero"));
 
@@ -12,12 +12,8 @@ var numDue = parseInt(prompt("Prego inserire un altro numero"));
 
 if (numUno > numDue) {
   result = numUno;
-  other = numDue;
 } else {
   result = numDue;
-  other = numUno;
 }
 
 document.getElementById('maggiore').innerHTML = result
-
-document.getElementById('altro').innerHTML = other
